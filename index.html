@@ -31,6 +31,12 @@ https://templatemo.com/tm-580-woox-travel
 <script>
 document.getElementById("user-name").textContent =
     localStorage.getItem("username");
+
+  const username = localStorage.getItem("username");
+
+if (username) {
+    document.getElementById("namaUser").textContent = username;
+}
 </script>
 <body>
 
