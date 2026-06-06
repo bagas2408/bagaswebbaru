@@ -28,7 +28,11 @@ https://templatemo.com/tm-580-woox-travel
 -->
 
   </head>
-
+<script>
+  // Mengambil nama dari localStorage (sesuaikan dengan key login-mu)
+  const username = localStorage.getItem("username") || "Pengguna"; 
+  document.getElementById("user-greeting").innerText = `Halo, ${username}`;
+</script>
 <body>
 
   <!-- ***** Preloader Start ***** -->
@@ -62,6 +66,7 @@ https://templatemo.com/tm-580-woox-travel
                         <li><a href="deals.html">Deals</a></li>
                         <li><a href="reservation.html">Reservation</a></li>
                         <li><a href="reservation.html">Book Yours</a></li>
+                        <li><a href="#" id="user-greeting">Halo, Tamu</a></li>
                     </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
