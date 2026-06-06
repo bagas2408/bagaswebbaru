@@ -2327,3 +2327,10 @@ body {
     padding: 0px;
   }
 }
+.tulisan {
+	border-radius: 25px;
+    background-color: rgba(0, 144, 255, 0.5);
+    padding: 4px 8px; /* Jarak antara teks dan background */
+    box-decoration-break: clone;
+    color: white;
+	
