@@ -28,6 +28,16 @@ https://templatemo.com/tm-580-woox-travel
 -->
 
   </head>
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const savedUsername = localStorage.getItem("username");
+
+    if (savedUsername) {
+        document.getElementById("usernameDisplay").textContent =
+            savedUsername;
+    }
+});
+</script>
 <script>
 document.getElementById("user-name").textContent =
     localStorage.getItem("username");
@@ -71,7 +81,7 @@ if (username) {
                         <li><a href="deals.html">Deals</a></li>
                         <li><a href="reservation.html">Reservation</a></li>
                         <li><a href="reservation.html">Book Yours</a></li>
-                        <p>Selamat Datang, <span id="namaUser"></span></p>
+                        <p>Selamat Datang, <span id="usernameDisplay"></span></p>
                     </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
