@@ -21,11 +21,14 @@
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
   </head>
+
 <script>
-function goLogin() {
-    window.location.href = "login/index.html";
+function logout() {
+    localStorage.removeItem("username");
+    window.location.href = "https://bagas2408.github.io/bagsakhir/index.html";
 }
 </script>
+
 <body>
 
   <!-- ***** Preloader Start ***** -->
@@ -59,10 +62,10 @@ function goLogin() {
                         <li><a href="deals.html">Penawaran</a></li>
                         <li><a href="reservation.html">Reservasi</a></li>
                         <li><a href="reservation.html">Pesan Sekarang</a></li>
-                        <p id="userInfo">Belum login</p>
+                        <p id="userInfo"></p>
 
               <div id="authArea">
-                  <button onclick="goLogin()" class="nav-cta">Masuk</button>
+                  <button onclick="logout()" class="nav-cta">Keluar</button>
               </div>
                     </ul>   
                     <a class='menu-trigger'>
@@ -396,12 +399,9 @@ function goLogin() {
     </div>
   </footer>
 
-
   <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
   <script src="assets/js/isotope.min.js"></script>
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/wow.js"></script>
@@ -423,7 +423,7 @@ function goLogin() {
       bannerTimer = setInterval(bannerSwitcher, 5000)
     });
   </script>
-    <script src="login/js/welcome.js"></script>
-  </body>
+
+</body>
 
 </html>
