@@ -424,6 +424,13 @@ function logout() {
     });
   </script>
 
+  <script>
+    const user = localStorage.getItem("username");
+    if (user) {
+        document.getElementById("userInfo").innerText = "Halo, " + user;
+    }
+  </script>
+
 </body>
 
 </html>
